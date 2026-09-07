@@ -1,7 +1,7 @@
 package org.leetcode.exercises.strings;
 
 /*
-3. Longest Substring Without Repeating Characters
+3. Longest Substring Without Repeating Characters (https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
 
 Given a string s, find the length of the longest without duplicate characters.
 

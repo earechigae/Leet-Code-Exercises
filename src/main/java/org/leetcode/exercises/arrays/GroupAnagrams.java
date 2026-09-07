@@ -3,7 +3,7 @@ package org.leetcode.exercises.arrays;
 import java.util.*;
 
 /*
-49. Group Anagrams
+49. Group Anagrams (https://leetcode.com/problems/group-anagrams/description/)
 
 Given an array of strings strs, group the together. You can return the answer in any order.
 

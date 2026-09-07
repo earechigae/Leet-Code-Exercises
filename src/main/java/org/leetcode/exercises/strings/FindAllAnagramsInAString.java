@@ -1,7 +1,8 @@
 package org.leetcode.exercises.strings;
 
 /*
-438. Find All Anagrams in a String (https://www.youtube.com/watch?v=egPDpu26q0M)
+438. Find All Anagrams in a String (https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
+Solution: https://www.youtube.com/watch?v=egPDpu26q0M
 
 Given two strings s and p, return an array of all the start indices of p's in s. You may return the answer in any order.
 Example 1:
