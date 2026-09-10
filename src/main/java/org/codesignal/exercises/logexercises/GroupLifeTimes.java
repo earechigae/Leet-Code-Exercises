@@ -58,8 +58,8 @@ public class GroupLifeTimes {
                 }
             }
         }
-            // Find the longest lifetime
-            int maxLife = Collections.max(lifeDict.entrySet(), Map.Entry.comparingByValue()).getValue();
+        // Find the longest lifetime
+        int maxLife = Collections.max(lifeDict.entrySet(), Map.Entry.comparingByValue()).getValue();
 
         // Building the result list where each item is a string of "group ID lifetime" if it has the longest lifetime.
         List<String> result = new ArrayList<>();
@@ -72,7 +72,7 @@ public class GroupLifeTimes {
             }
         }
 
-        // Sorting the result in ascending order of the group IDs
+        // Sorting the result in ascending order of the book IDs
         result.sort(Comparator.comparing(s -> Integer.parseInt(s.split(" ")[0])));
         return result;
     }
@@ -81,7 +81,7 @@ public class GroupLifeTimes {
         String logs = "1 create 09:00, 2 create 10:00, 1 delete 12:00, 3 create 13:00, 2 delete 15:00, 3 delete 16:00";
         List<String> result = analyzeLogs(logs);
         for (String entry : result) {
-            System.out.println("Group " + entry.split(" ")[0] + " lifetime: " + entry.split(" ")[1]);
+            System.out.println("Group Id: " + entry.split(" ")[0] + ", lifetime: " + entry.split(" ")[1]);
         }
         // Outputs:
         // Group 2 lifetime: 05:00
