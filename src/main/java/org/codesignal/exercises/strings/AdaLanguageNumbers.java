@@ -67,8 +67,8 @@ public class AdaLanguageNumbers {
     }
 
     public static void main(String args[]){
-        //String [] adaNumbers = {"123_456_789", "16#123abc#", "10#123abc#", "10#10#123ABC#", "10#0#", "10##", "16#1234567890ABCDEFabcdef#"};
-        String [] adaNumbers = { "10#0#" };
+        String [] adaNumbers = {"123_456_789", "16#123abc#", "10#123abc#", "10#10#123ABC#", "10#0#", "10##", "16#1234567890ABCDEFabcdef#"};
+        //String [] adaNumbers = { "10#0#" };
         AdaLanguageNumbers adaLanguageNumbers = new AdaLanguageNumbers();
 
         int line = 1;
