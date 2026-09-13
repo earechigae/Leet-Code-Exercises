@@ -56,7 +56,7 @@ public class ZigZagTraverseAndPrimes {
         }
 
         // 4. Check odd (impar) factors up to the square root of n
-        // Incrementing by 2 skips checking even numbers entirely
+        // Incrementing by 2 skips checking even (par) numbers entirely
         for (int i = 3; i <= Math.sqrt(n); i += 2) {
             if (n % i == 0) {
                 return false; // Found a factor, so it's not prime
