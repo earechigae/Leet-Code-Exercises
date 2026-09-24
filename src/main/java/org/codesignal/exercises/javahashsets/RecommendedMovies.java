@@ -23,7 +23,6 @@ Note: The input arrays can contain between $1$ and $1000000$ elements (inclusive
 public class RecommendedMovies {
 
     public int[] recommendMovies(int[] userHistory, int[] popularMovies, int[] unpopularMovies) {
-        // TODO: implement the method to recommend movies.
         Set<Integer> userHistorySet = new HashSet<>();
         Set<Integer> unPopularMoviesSet = new HashSet<>();
         Set<Integer> resultSet = new TreeSet<>();
