@@ -36,6 +36,25 @@ import java.util.Map;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
+        int[] tuple = {};
+        Map<Integer, Integer> seen = new HashMap<>();
+
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (seen.containsKey(complement)) {
+                tuple = new int[2];
+                tuple[0] = seen.get(complement);
+                tuple[1] = i;
+                break;
+            }
+            seen.put(nums[i], i);
+        }
+
+        return tuple;
+    }
+
+    //This implementation is not correct
+    public int[] twoSumIncorrec(int[] nums, int target) {
         int[] tuple = new int[2];
         Map<Integer, List<Integer>> positionMap = new HashMap<>();
         for(int i = 0; i < nums.length; i++){
